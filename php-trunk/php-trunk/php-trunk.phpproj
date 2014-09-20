@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>php_trunk</Name>
+    <ProjectGuid>19298fda-8827-48ba-b81a-d954f624e64d</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>php_trunk</RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>php-trunk</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="index.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\autoload.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\Entities\AccessToken.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\Entities\SignedRequest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookAuthorizationException.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookCanvasLoginHelper.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookClientException.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookJavaScriptLoginHelper.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookOtherException.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookPageTabHelper.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookPermissionException.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookRedirectLoginHelper.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookRequest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookRequestException.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookResponse.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookSDKException.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookServerException.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookSession.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookSignedRequestFromInputHelper.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\FacebookThrottleException.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\GraphAlbum.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\GraphLocation.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\GraphObject.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\GraphPage.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\GraphSessionInfo.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\GraphUser.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\GraphUserPage.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\HttpClients\FacebookCurl.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\HttpClients\FacebookCurlHttpClient.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\HttpClients\FacebookGuzzleHttpClient.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\HttpClients\FacebookHttpable.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\HttpClients\FacebookStream.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\HttpClients\FacebookStreamHttpClient.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\bootstrap.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\Entities\AccessTokenTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\Entities\SignedRequestTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\FacebookCanvasLoginHelperTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\FacebookJavaScriptLoginHelperTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\FacebookPageTabHelperTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\FacebookRedirectLoginHelperTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\FacebookRequestExceptionTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\FacebookRequestTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\FacebookSessionTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\FacebookSignedRequestFromInputHelperTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\FacebookTestHelper.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\GraphAlbumTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\GraphLocationTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\GraphObjectTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\GraphSessionInfoTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\GraphUserTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\HttpClients\AbstractTestHttpClient.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\HttpClients\FacebookCurlHttpClientTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\HttpClients\FacebookGuzzleHttpClientTest.php" />
+    <Compile Include="library\facebook-php-sdk-v4-4.0-dev\tests\HttpClients\FacebookStreamHttpClientTest.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="library\" />
+    <Folder Include="library\facebook-php-sdk-v4-4.0-dev\" />
+    <Folder Include="library\facebook-php-sdk-v4-4.0-dev\docs\" />
+    <Folder Include="library\facebook-php-sdk-v4-4.0-dev\src\" />
+    <Folder Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\" />
+    <Folder Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\Entities\" />
+    <Folder Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\HttpClients\" />
+    <Folder Include="library\facebook-php-sdk-v4-4.0-dev\tests\" />
+    <Folder Include="library\facebook-php-sdk-v4-4.0-dev\tests\Entities\" />
+    <Folder Include="library\facebook-php-sdk-v4-4.0-dev\tests\HttpClients\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\.gitignore" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\composer.json" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\CONTRIBUTING.md" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\FacebookCanvasLoginHelper.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\FacebookJavaScriptLoginHelper.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\FacebookRedirectLoginHelper.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\FacebookRequest.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\FacebookRequestException.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\FacebookResponse.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\FacebookSession.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\GraphObject.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\post_links.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\retrieve_user_profile.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\sdk_getting_started.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\sdk_landing_page.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\docs\upload_photo.fbmd" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\LICENSE" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\phpunit.xml.dist" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\README.md" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\src\Facebook\HttpClients\fb_ca_chain_bundle.crt" />
+    <Content Include="library\facebook-php-sdk-v4-4.0-dev\tests\FacebookTestCredentials.php.dist" />
+  </ItemGroup>
+</Project>
